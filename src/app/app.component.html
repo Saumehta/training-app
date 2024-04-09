@@ -1,0 +1,39 @@
+<mat-toolbar class="docs-navbar-header" color="primary">
+  <div class="skip-link-wrapper cdk-visually-hidden ng-star-inserted">
+    <a mat-raised-button="" [routerLink]="['/']" color="accent" class="mat-focus-indicator mat-raised-button mat-button-base mat-accent" tabindex="0" aria-disabled="false">
+      <span class="mat-button-wrapper"> Skip to main content </span>
+      <div matripple="" class="mat-ripple mat-button-ripple"></div>
+      <div class="mat-button-focus-overlay"></div>
+    </a>
+  </div>
+  <a mat-button="" [routerLink]="['/']" aria-label="Home" class="mat-focus-indicator docs-button mat-button mat-button-base" tabindex="0" aria-disabled="false">
+    <span class="mat-button-wrapper">
+        <span>Home</span>
+    </span>
+    <div matripple="" class="mat-ripple mat-button-ripple"></div>
+    <div class="mat-button-focus-overlay"></div>
+  </a>
+  <span class="example-spacer"></span>
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+<!--      <button mat-menu-item (click)="logout()">Sign Out</button> -->
+    <button mat-menu-item (click)="logout()">Sign Out</button>
+    <button mat-menu-item>Toggle Theme</button>
+  </mat-menu>
+</mat-toolbar>
+<div fxLayout="row" fxLayoutGap="10px">
+  <app-policydetails (onPolicyDetailsMapped)="onPolicyDetailsMapped($event)"></app-policydetails>
+</div>
+<div fxLayout="row" fxLayoutGap="10px">
+  <button mat-stroked-button class="mat-elevation-z1" fxFlexOffset="30" color="primary" (click)="save()">Save</button>
+</div>
+<div *ngIf="policyId !=0" fxLayout="row" fxLayoutGap="10px">
+  <mat-card fxFlexOffset="1" class="mat-elevation-z3">
+    <mat-card-content>
+      <span>Policy Id {{policyId}} is created</span>
+    </mat-card-content>
+  </mat-card>
+</div>
+

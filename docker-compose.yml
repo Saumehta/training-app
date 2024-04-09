@@ -1,0 +1,28 @@
+version: "3"
+services:
+
+  training-mysql:
+    image: mysql
+    container_name: training-mysql
+    volumes:
+      - tempSqldata:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: abc@123
+      MYSQL_DATABASE: trainingdb
+      MYSQL_USER: trainee
+      MYSQL_PASSWORD: abc@123
+    ports:
+      - 3306:3306
+      - 33061:33060
+
+  training-app:
+    image: insuresense/training:1.0.0
+    container_name: training-app
+    depends_on:
+      - training-mysql
+    command: ["sleep 20 && java org.springframework.boot.loader.JarLauncher"]      
+    ports:
+      - 8080:8080
+
+volumes:
+  tempSqldata:

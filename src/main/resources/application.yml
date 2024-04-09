@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    show-sql: false
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3306/trainingdb?useUnicode=true
+    username: trainee
+    password: abc@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      database: MYSQL
+      database-platform: org.hibernate.dialect.MySQL8Dialect
