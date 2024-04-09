@@ -8,7 +8,7 @@ Install the following softwares:
 
 1. [Intellij Idea Community Edition](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
 2. [Visual Studio Code for windows](https://code.visualstudio.com/download)
-3. [Java JDK 11](https://www.oracle.com/in/java/technologies/javase-jdk11-downloads.html) 
+3. [Java JDK 17](https://www.oracle.com/in/java/technologies/downloads/#java17) 
 4. [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 
 Option 1: 
