@@ -1,6 +1,6 @@
 # TrainingApp
 
-This project was generated with [Spring-Boot](https://spring.io/) version 2.3.8.Release & [Angular CLI](https://angular.io/) version 11.1.1.
+This project was generated with [Spring-Boot](https://spring.io/) version 3.1.6 & [Angular CLI](https://angular.io/) version 16.2.0
 
 ## Initial Setup
 
