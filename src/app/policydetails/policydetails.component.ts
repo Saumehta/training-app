@@ -38,7 +38,7 @@ export const DATE_FORMATS = {
 
 export class PolicydetailsComponent implements OnInit {
 
-  policyDetailsFormGroup: FormGroup;
+  policyDetailsFormGroup!: FormGroup;
 
   @Output()
   onPolicyDetailsMapped: EventEmitter<PolicyExt> = new EventEmitter<PolicyExt>();
@@ -47,7 +47,7 @@ export class PolicydetailsComponent implements OnInit {
   products: string[] = ['SME','Property', 'Liability', 'Engineering Insurance', 'Marine Insurance'];
   ptypes: string[] = ['Annual Payment', 'Instalments'];
   viewMode: boolean = false;
-  policyId: number;
+  policyId: number = 0;
 
   constructor(
     private _formBuilder: FormBuilder,

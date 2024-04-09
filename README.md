@@ -1,6 +1,6 @@
 # TrainingApp
 
-This project was generated with [Spring-Boot](https://spring.io/) version 3.1.6 & [Angular CLI](https://angular.io/) version 16.2.0
+This project was generated with [Spring-Boot](https://spring.io/) version 3.1.6 & [Angular CLI](https://angular.io/) version 16.2.0.
 
 ## Initial Setup
 
@@ -8,7 +8,7 @@ Install the following softwares:
 
 1. [Intellij Idea Community Edition](https://www.jetbrains.com/idea/download/download-thanks.html?platform=windows&code=IIC)
 2. [Visual Studio Code for windows](https://code.visualstudio.com/download)
-3. [Java JDK 17](https://www.oracle.com/in/java/technologies/downloads/#java17) 
+3. [Java JDK 11](https://www.oracle.com/in/java/technologies/javase-jdk11-downloads.html) 
 4. [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows/)
 
 Option 1: 

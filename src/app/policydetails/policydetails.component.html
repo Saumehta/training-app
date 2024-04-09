@@ -1,12 +1,12 @@
-<mat-card fxFlex="auto" fxFlexOffset="2" class="mat-elevation-z3">
+<mat-card class="flex-container-col">
   <mat-card-header>
     <mat-card-title>Policy Details</mat-card-title>
   </mat-card-header>
   <mat-divider></mat-divider>
   <mat-card-content>
     <form [formGroup]="policyDetailsFormGroup">
-      <div fxLayout="row" fxLayoutGap="10px">
-        <mat-form-field fxFlex="auto" appearance="fill">
+      <div class="flex-container-row">
+        <mat-form-field class="flex-container-half-row" appearance="fill">
             <mat-label>Product Selection</mat-label>
             <mat-select formControlName="productCd" required>
               <mat-option *ngFor="let product of products" [value]="product">{{product}}
@@ -17,22 +17,22 @@
             </mat-error>
         </mat-form-field>
       </div>
-      <div fxLayout="row" fxLayoutGap="10px">
-        <mat-form-field fxFlex="auto" appearance="fill">
+      <div class="flex-container-row">
+        <mat-form-field class="flex-container-half-row" appearance="fill">
           <mat-label>Effective Date</mat-label>
           <input matInput [matDatepicker]="dp" formControlName="effectiveDate" readonly={{viewMode}}>
           <mat-datepicker-toggle *ngIf="!viewMode"  matSuffix [for]="dp"></mat-datepicker-toggle>
           <mat-datepicker #dp></mat-datepicker>
         </mat-form-field>
-        <mat-form-field fxFlex="auto" appearance="fill">
+        <mat-form-field class="flex-container-half-row"appearance="fill">
           <mat-label>Expiry Date</mat-label>
           <input matInput [matDatepicker]="picker1" formControlName="expiryDate" readonly={{viewMode}}>
           <mat-datepicker-toggle *ngIf="!viewMode" matSuffix [for]="picker1"></mat-datepicker-toggle>
           <mat-datepicker #picker1></mat-datepicker>
         </mat-form-field>
       </div>
-      <div fxLayout="row" fxLayoutGap="10px">
-        <mat-form-field fxFlex="50" appearance="fill">
+      <div class="flex-container-row">
+        <mat-form-field class="flex-container-half-row"appearance="fill">
           <mat-label>Payment Type</mat-label>
           <mat-select formControlName="paymentType" required>
             <mat-option *ngFor="let ptype of ptypes" [value]="ptype">{{ptype}}

@@ -13,7 +13,7 @@ export class AppComponent {
   title = 'training-app';
   isAuthenticated: boolean=true;
   policyExt: PolicyExt = {} as PolicyExt;
-  policyId: number = 0;
+  policyId: any = 0;
 
   constructor(
     private apiService: ApiService
@@ -34,7 +34,7 @@ export class AppComponent {
               this.policyId = response.body;
             }
           },
-          err => this.handleError(err)
+        (err: any) => this.handleError(err)
       ))
     .subscribe();
   }

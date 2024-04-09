@@ -1,6 +1,7 @@
 import { HttpClient, HttpEvent, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { PolicyExt } from '../models/models';
 
 const httpOptions = {
   observe: 'events',
@@ -15,7 +16,7 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  createPolicyDetails(policydetails): Observable<HttpEvent<number>> {
+  createPolicyDetails(policydetails: PolicyExt): Observable<HttpEvent<number>> {
     let body = JSON.stringify(policydetails);
     return this.http.post<number>('api/policy/create', body, this.makeOptions());
   }

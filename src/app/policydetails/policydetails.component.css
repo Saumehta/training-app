@@ -1,0 +1,21 @@
+.flex-container-col {
+    display: inline-flex;
+    flex-direction: column;
+    grid-gap: 10px;
+    width: 75%;
+    z-index: 5;
+  }
+
+  
+.flex-container-row {
+    display: inline-flex;
+    flex-direction: row;
+    grid-gap: 10px;
+    width: 100%;
+    z-index: 5;
+  }
+  
+  .flex-container-half-row {
+    width: 45%;
+    z-index: 5;
+  }
